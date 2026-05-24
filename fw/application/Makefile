@@ -398,7 +398,7 @@ SRC_FILES += \
   $(U8G2_ROOT)/u8x8_string.c \
   $(U8G2_ROOT)/u8x8_u16toa.c \
   $(U8G2_ROOT)/u8x8_u8toa.c \
-  $(U8G2_ROOT)/u8x8_d_ssd1306_128x64_noname.c
+  $(U8G2_ROOT)/u8x8_d_sh1106_128x64_noname.c
 
 # Include folders common to all targets
 INC_FOLDERS += \

@@ -16,23 +16,25 @@
 #define BSP_LED_0      LED_1
 
 
-#define BUTTONS_NUMBER 3
+#define BUTTONS_NUMBER 5
 
-#define BUTTON_START   5
-#define BUTTON_1       5
-#define BUTTON_2       6
-#define BUTTON_3       7
-#define BUTTON_STOP    7
+#define BUTTON_1       5  // 按键下 (DOWN)
+#define BUTTON_2       6  // 按键 OK
+#define BUTTON_3       7  // 按键上 (UP)
+#define BUTTON_4       20 // 按键返回
+#define BUTTON_5       30 // 按键休眠
+
 #define BUTTON_PULL    NRF_GPIO_PIN_PULLUP
 
 #define BUTTONS_ACTIVE_STATE 0
 
-#define BUTTONS_LIST { BUTTON_1, BUTTON_2, BUTTON_3}
+#define BUTTONS_LIST { BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_4, BUTTON_5 }
 
 #define BSP_BUTTON_0   BUTTON_1
 #define BSP_BUTTON_1   BUTTON_2
 #define BSP_BUTTON_2   BUTTON_3
-
+#define BSP_BUTTON_3   BUTTON_4
+#define BSP_BUTTON_4   BUTTON_5
 
 // display config
 #define OLED_SCREEN
@@ -43,22 +45,19 @@
 //#define LCD
 //#define LCD_ST7567
 
-
 // screen drivers
-#define LCD_CS_PIN 27
-#define LCD_RESET_PIN 29
-#define LCD_BL_PIN 30
-#define LCD_DC_PIN 28 // green wire (DC)
-
+#define LCD_CS_PIN 27    // 屏幕规格 CS 对应芯片 27
+#define LCD_RESET_PIN 29 // 屏幕规格 res 对应芯片 29
+#define LCD_BL_PIN 30    // 背光控制线（保持默认）
+#define LCD_DC_PIN 28    // 屏幕规格 dc 对应芯片 28
 
 // VFS driver
 //#define VFS_LFS_ENABLE
 #define VFS_SPIFFS_ENABLE
 
-
-#define NRFX_SPIM_SCK_PIN 26  // yellow wire (CLK)
-#define NRFX_SPIM_MOSI_PIN 25 // blue wire (DIN)
-#define NRFX_SPIM_MISO_PIN 19 // blue wire (DIN)
+#define NRFX_SPIM_SCK_PIN 26  // 屏幕规格 sclk 对应芯片 26
+#define NRFX_SPIM_MOSI_PIN 25 // 屏幕规格 sdin 对应芯片 25
+#define NRFX_SPIM_MISO_PIN 19 // 保持默认
 
 // flash
 #define FLASH_CS_PIN 18
