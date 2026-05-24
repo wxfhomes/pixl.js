@@ -13,7 +13,7 @@ jobs:
   build:
     strategy:
       matrix:
-        board: ["LCD", "OLED"]
+        board: ["OLED"]
     runs-on: ubuntu-latest
     container: solosky/nrf52-sdk:latest
     steps:
